@@ -1,0 +1,521 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           Atmel AVR 8-bit microcontroller
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          240024 (bytes into file)
+  Flags:                             0x99
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         3
+  Size of section headers:           40 (bytes)
+  Number of section headers:         16
+  Section header string table index: 13
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        00000000 000094 001ef4 00  AX  0   0  2
+  [ 2] .data             PROGBITS        00800060 001f88 00000c 00  WA  0   0  1
+  [ 3] .bss              NOBITS          0080006c 001f94 000107 00  WA  0   0  1
+  [ 4] .comment          PROGBITS        00000000 001f94 000011 01  MS  0   0  1
+  [ 5] .debug_aranges    PROGBITS        00000000 001fa5 000a98 00      0   0  1
+  [ 6] .debug_info       PROGBITS        00000000 002a3d 01b43b 00      0   0  1
+  [ 7] .debug_abbrev     PROGBITS        00000000 01de78 005e92 00      0   0  1
+  [ 8] .debug_line       PROGBITS        00000000 023d0a 005463 00      0   0  1
+  [ 9] .debug_frame      PROGBITS        00000000 029170 001e4c 00      0   0  4
+  [10] .debug_str        PROGBITS        00000000 02afbc 003f6b 01  MS  0   0  1
+  [11] .debug_loc        PROGBITS        00000000 02ef27 00acc6 00      0   0  1
+  [12] .debug_ranges     PROGBITS        00000000 039bed 000d10 00      0   0  1
+  [13] .shstrtab         STRTAB          00000000 03a8fd 00009b 00      0   0  1
+  [14] .symtab           SYMTAB          00000000 03ac18 001930 10     15 237  4
+  [15] .strtab           STRTAB          00000000 03c548 000f08 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x000094 0x00000000 0x00000000 0x01ef4 0x01ef4 R E 0x2
+  LOAD           0x001f88 0x00800060 0x00001ef4 0x0000c 0x0000c RW  0x1
+  LOAD           0x001f94 0x0080006c 0x0080006c 0x00000 0x00107 RW  0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text 
+   01     .data 
+   02     .bss 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+The decoding of unwind sections for machine type Atmel AVR 8-bit microcontroller is not currently supported.
+
+Symbol table '.symtab' contains 403 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000000     0 SECTION LOCAL  DEFAULT    1 
+     2: 00800060     0 SECTION LOCAL  DEFAULT    2 
+     3: 0080006c     0 SECTION LOCAL  DEFAULT    3 
+     4: 00000000     0 SECTION LOCAL  DEFAULT    4 
+     5: 00000000     0 SECTION LOCAL  DEFAULT    5 
+     6: 00000000     0 SECTION LOCAL  DEFAULT    6 
+     7: 00000000     0 SECTION LOCAL  DEFAULT    7 
+     8: 00000000     0 SECTION LOCAL  DEFAULT    8 
+     9: 00000000     0 SECTION LOCAL  DEFAULT    9 
+    10: 00000000     0 SECTION LOCAL  DEFAULT   10 
+    11: 00000000     0 SECTION LOCAL  DEFAULT   11 
+    12: 00000000     0 SECTION LOCAL  DEFAULT   12 
+    13: 00000000     0 FILE    LOCAL  DEFAULT  ABS wiring_digital.c
+    14: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    15: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    16: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+    17: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+    18: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+    19: 0000191e    70 FUNC    LOCAL  DEFAULT    1 turnOffPWM
+    20: 00000000     0 FILE    LOCAL  DEFAULT  ABS Tiny_OWSlave_OWH_DS18B20_
+    21: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    22: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    23: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+    24: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+    25: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+    26: 00800071     8 OBJECT  LOCAL  DEFAULT    3 _ZGVZ8blinkingvE10nextMil
+    27: 0080006d     4 OBJECT  LOCAL  DEFAULT    3 _ZZ8blinkingvE10nextMilli
+    28: 0080006c     1 OBJECT  LOCAL  DEFAULT    3 _ZZ8blinkingvE8ledState
+    29: 00000264    90 FUNC    LOCAL  DEFAULT    1 _GLOBAL__sub_I_hub
+    30: 00000000     0 FILE    LOCAL  DEFAULT  ABS _clear_bss.o
+    31: 00000070     0 NOTYPE  LOCAL  DEFAULT    1 .do_clear_bss_start
+    32: 0000006e     0 NOTYPE  LOCAL  DEFAULT    1 .do_clear_bss_loop
+    33: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS18B20.cpp
+    34: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    35: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    36: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+    37: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+    38: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+    39: 00000000     0 FILE    LOCAL  DEFAULT  ABS OneWireHub.cpp
+    40: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    41: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    42: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+    43: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+    44: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+    45: 00000000     0 FILE    LOCAL  DEFAULT  ABS OneWireItem.cpp
+    46: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    47: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    48: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+    49: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+    50: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+    51: 00000000     0 FILE    LOCAL  DEFAULT  ABS Adafruit_Si7021_Tiny.cpp
+    52: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    53: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    54: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+    55: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+    56: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+    57: 00000000     0 FILE    LOCAL  DEFAULT  ABS USI_TWI_Slave.c
+    58: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    59: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    60: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+    61: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+    62: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+    63: 0080012f     1 OBJECT  LOCAL  DEFAULT    3 TWI_RxTail
+    64: 00800130     1 OBJECT  LOCAL  DEFAULT    3 TWI_RxHead
+    65: 0080012d     1 OBJECT  LOCAL  DEFAULT    3 TWI_TxTail
+    66: 0080012e     1 OBJECT  LOCAL  DEFAULT    3 TWI_TxHead
+    67: 00800132     1 OBJECT  LOCAL  DEFAULT    3 TWI_slaveAddress
+    68: 00800131     1 OBJECT  LOCAL  DEFAULT    3 USI_TWI_Overflow_State
+    69: 00000000     0 FILE    LOCAL  DEFAULT  ABS TinyWireM.cpp
+    70: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    71: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    72: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+    73: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+    74: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+    75: 00000000     0 FILE    LOCAL  DEFAULT  ABS USI_TWI_Master.cpp
+    76: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    77: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    78: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+    79: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+    80: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+    81: 00000000     0 FILE    LOCAL  DEFAULT  ABS wiring.c
+    82: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    83: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    84: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+    85: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+    86: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+    87: 00001704    30 FUNC    LOCAL  DEFAULT    1 initToneTimerInternal
+    88: 0080014a     1 OBJECT  LOCAL  DEFAULT    3 millis_timer_fract
+    89: 00001816     2 FUNC    LOCAL  DEFAULT    1 __empty
+    90: 00000000     0 FILE    LOCAL  DEFAULT  ABS wiring_analog.c
+    91: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    92: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    93: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+    94: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+    95: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+    96: 00000000     0 FILE    LOCAL  DEFAULT  ABS abi.cpp
+    97: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+    98: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+    99: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   100: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   101: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   102: 00000000     0 FILE    LOCAL  DEFAULT  ABS main.cpp
+   103: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   104: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   105: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   106: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   107: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   108: 00000000     0 FILE    LOCAL  DEFAULT  ABS _exit.o
+   109: 00001ef2     0 NOTYPE  LOCAL  DEFAULT    1 __stop_program
+   110: 00000000     0 FILE    LOCAL  DEFAULT  ABS BAE910.cpp
+   111: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   112: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   113: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   114: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   115: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   116: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2401.cpp
+   117: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   118: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   119: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   120: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   121: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   122: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2405.cpp
+   123: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   124: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   125: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   126: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   127: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   128: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2408.cpp
+   129: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   130: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   131: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   132: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   133: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   134: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2413.cpp
+   135: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   136: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   137: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   138: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   139: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   140: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2423.cpp
+   141: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   142: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   143: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   144: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   145: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   146: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2431.cpp
+   147: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   148: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   149: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   150: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   151: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   152: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2433.cpp
+   153: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   154: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   155: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   156: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   157: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   158: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2438.cpp
+   159: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   160: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   161: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   162: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   163: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   164: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2450.cpp
+   165: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   166: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   167: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   168: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   169: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   170: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2502.cpp
+   171: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   172: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   173: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   174: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   175: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   176: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2506.cpp
+   177: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   178: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   179: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   180: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   181: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   182: 00000000     0 FILE    LOCAL  DEFAULT  ABS DS2890.cpp
+   183: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   184: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   185: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   186: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   187: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   188: 00000000     0 FILE    LOCAL  DEFAULT  ABS platform.cpp
+   189: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   190: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   191: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   192: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   193: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   194: 00000000     0 FILE    LOCAL  DEFAULT  ABS Adafruit_Si7021.cpp
+   195: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   196: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   197: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   198: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   199: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   200: 00000000     0 FILE    LOCAL  DEFAULT  ABS twi.c
+   201: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   202: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   203: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   204: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   205: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   206: 00000000     0 FILE    LOCAL  DEFAULT  ABS TWSWire.cpp
+   207: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   208: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   209: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   210: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   211: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   212: 00000000     0 FILE    LOCAL  DEFAULT  ABS USIWire.cpp
+   213: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   214: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   215: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   216: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   217: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   218: 00000000     0 FILE    LOCAL  DEFAULT  ABS Wire.cpp
+   219: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   220: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   221: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   222: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   223: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   224: 00000000     0 FILE    LOCAL  DEFAULT  ABS WireS.cpp
+   225: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   226: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   227: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   228: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   229: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   230: 00000000     0 FILE    LOCAL  DEFAULT  ABS USI_TWI_Master.c
+   231: 0000003e     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_H__
+   232: 0000003d     0 NOTYPE  LOCAL  DEFAULT  ABS __SP_L__
+   233: 0000003f     0 NOTYPE  LOCAL  DEFAULT  ABS __SREG__
+   234: 00000000     0 NOTYPE  LOCAL  DEFAULT  ABS __tmp_reg__
+   235: 00000001     0 NOTYPE  LOCAL  DEFAULT  ABS __zero_reg__
+   236: 00000000     0 FILE    LOCAL  DEFAULT  ABS 
+   237: 00000e4e    52 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub4pollEv
+   238: 00800129     2 OBJECT  GLOBAL DEFAULT    3 USI_TWI_On_Slave_Receive
+   239: 00800096    20 OBJECT  GLOBAL DEFAULT    3 ds18b22
+   240: 00001816     2 FUNC    WEAK   DEFAULT    1 yield
+   241: 000015ac    46 FUNC    GLOBAL DEFAULT    1 _Z20USI_TWI_Master_Startv
+   242: 0000003c     6 OBJECT  GLOBAL DEFAULT    1 port_to_mode_PGM
+   243: 000004d8    36 FUNC    GLOBAL DEFAULT    1 _ZNK10OneWireHub26getInde
+   244: 0000008e     0 NOTYPE  WEAK   DEFAULT    1 __vector_1
+   245: 000014c0    12 FUNC    GLOBAL DEFAULT    1 _ZN7USI_TWI17beginTransmi
+   246: 00800060     6 OBJECT  WEAK   DEFAULT    2 _ZTV7DS18B20
+   247: 00000872   196 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub4sendEPKhh
+   248: 0000128e    42 FUNC    GLOBAL DEFAULT    1 _ZN20Adafruit_Si7021_Tiny
+   249: 00001ee0     8 NOTYPE  GLOBAL HIDDEN     1 __tablejump__
+   250: 00001b68     4 FUNC    GLOBAL DEFAULT    1 __divsf3
+   251: 00001d8a    34 FUNC    GLOBAL DEFAULT    1 __fp_round
+   252: 000006fc   214 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub10checkRes
+   253: 00001c38    10 FUNC    GLOBAL DEFAULT    1 __fixsfsi
+   254: 00001dac    68 FUNC    GLOBAL DEFAULT    1 __fp_split3
+   255: 0080012b     2 OBJECT  GLOBAL DEFAULT    3 USI_TWI_On_Slave_Transmit
+   256: 0000001e     0 NOTYPE  GLOBAL DEFAULT    1 __trampolines_start
+   257: 00001d14    72 FUNC    GLOBAL DEFAULT    1 __fp_cmp
+   258: 00001ef4     0 NOTYPE  GLOBAL DEFAULT    1 _etext
+   259: 00001008    34 FUNC    GLOBAL DEFAULT    1 _ZN20Adafruit_Si7021_Tiny
+   260: 00001a96    10 FUNC    GLOBAL DEFAULT    1 __subsf3
+   261: 0000021c    72 FUNC    GLOBAL DEFAULT    1 loop
+   262: 0000102a   554 FUNC    GLOBAL DEFAULT    1 _ZN20Adafruit_Si7021_Tiny
+   263: 00000efc    24 FUNC    GLOBAL DEFAULT    1 _ZN20Adafruit_Si7021_Tiny
+   264: 0000008e     0 NOTYPE  WEAK   DEFAULT    1 __vector_12
+   265: 00000664    68 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub11buildIDT
+   266: 0000008e     0 NOTYPE  GLOBAL DEFAULT    1 __bad_interrupt
+   267: 00000afc   192 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub4recvEPhh
+   268: 0000155e    22 FUNC    GLOBAL DEFAULT    1 _Z25USI_TWI_Master_Initia
+   269: 00000e9a    36 FUNC    GLOBAL DEFAULT    1 _ZN11OneWireItem4crc8EPKh
+   270: 00001f00     0 NOTYPE  GLOBAL DEFAULT  ABS __data_load_end
+   271: 00000bbc   434 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub17recvAndP
+   272: 0000188a   148 FUNC    GLOBAL DEFAULT    1 analogWrite
+   273: 000002d4    86 FUNC    GLOBAL DEFAULT    1 _ZN7DS18B20C1Ehhhhhhh
+   274: 0000008e     0 NOTYPE  WEAK   DEFAULT    1 __vector_6
+   275: 000014cc    34 FUNC    GLOBAL DEFAULT    1 _ZN7USI_TWI5writeEh
+   276: 000009b0   332 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub12searchID
+   277: 00001b60     0 NOTYPE  GLOBAL DEFAULT    1 __lesf2
+   278: 0000001e     0 NOTYPE  GLOBAL DEFAULT    1 __trampolines_end
+   279: 000004fc    42 FUNC    GLOBAL DEFAULT    1 _ZNK10OneWireHub29getNrOf
+   280: 0000008e     0 NOTYPE  WEAK   DEFAULT    1 __vector_3
+   281: 00001df0    14 FUNC    GLOBAL DEFAULT    1 __fp_zero
+   282: 000019f8   144 FUNC    GLOBAL DEFAULT    1 digitalWrite
+   283: 00000ebe    62 FUNC    GLOBAL DEFAULT    1 _ZN11OneWireItemC2Ehhhhhh
+   284: 00000526   318 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub11buildIDT
+   285: 00001964   148 FUNC    GLOBAL DEFAULT    1 pinMode
+   286: 00001b60     0 NOTYPE  GLOBAL DEFAULT    1 __nesf2
+   287: 0000002a     6 OBJECT  GLOBAL DEFAULT    1 digital_pin_to_port_PGM
+   288: 00001ef4     0 NOTYPE  GLOBAL DEFAULT  ABS __data_load_start
+   289: 00001254    58 FUNC    GLOBAL DEFAULT    1 _ZN20Adafruit_Si7021_Tiny
+   290: 00000044     0 NOTYPE  GLOBAL DEFAULT    1 __dtors_end
+   291: 00800173     0 NOTYPE  GLOBAL DEFAULT    3 __bss_end
+   292: 00001ee8     8 FUNC    GLOBAL DEFAULT    1 abort
+   293: 008000be    20 OBJECT  GLOBAL DEFAULT    3 ds18b20
+   294: 00001574     6 FUNC    GLOBAL DEFAULT    1 _Z22USI_TWI_Get_State_Inf
+   295: 00800134     1 OBJECT  GLOBAL DEFAULT    3 _ZN7USI_TWI14USI_BytesAva
+   296: 000002d4    86 FUNC    GLOBAL DEFAULT    1 _ZN7DS18B20C2Ehhhhhhh
+   297: 00001b82   204 FUNC    GLOBAL DEFAULT    1 __divsf3x
+   298: 0000008e     0 NOTYPE  WEAK   DEFAULT    1 __vector_11
+   299: 000014ee    44 FUNC    GLOBAL DEFAULT    1 _ZN7USI_TWI15endTransmiss
+   300: 00000044     0 NOTYPE  WEAK   DEFAULT    1 __init
+   301: 000003a4    82 FUNC    GLOBAL DEFAULT    1 _ZN7DS18B2017setTemperatu
+   302: 00000f8e   122 FUNC    GLOBAL DEFAULT    1 _ZN20Adafruit_Si7021_Tiny
+   303: 00001dfe     0 NOTYPE  GLOBAL DEFAULT    1 __gtsf2
+   304: 000002be    22 FUNC    GLOBAL DEFAULT    1 _ZN7DS18B209updateCRCEv
+   305: 000012c6   142 FUNC    GLOBAL DEFAULT    1 __vector_13
+   306: 00001e20     0 NOTYPE  GLOBAL DEFAULT    1 __mulsf3_pse
+   307: 00001d68     6 FUNC    GLOBAL DEFAULT    1 __fp_nan
+   308: 0000032a   122 FUNC    GLOBAL DEFAULT    1 _ZN7DS18B204dutyEP10OneWi
+   309: 0000008e     0 NOTYPE  WEAK   DEFAULT    1 __vector_7
+   310: 0080014b     4 OBJECT  GLOBAL DEFAULT    3 millis_timer_millis
+   311: 00001d5c    12 FUNC    GLOBAL DEFAULT    1 __fp_inf
+   312: 00000066    16 NOTYPE  GLOBAL HIDDEN     1 __do_clear_bss
+   313: 0000151a     4 FUNC    GLOBAL DEFAULT    1 _ZN7USI_TWI15endTransmiss
+   314: 00810000     0 NOTYPE  GLOBAL DEFAULT    4 __eeprom_end
+   315: 00000024     6 OBJECT  GLOBAL DEFAULT    1 digital_pin_to_bit_mask_P
+   316: 00001e1c   210 FUNC    GLOBAL DEFAULT    1 __mulsf3x
+   317: 00800082    20 OBJECT  GLOBAL DEFAULT    3 ds18b23
+   318: 00001a88     2 FUNC    WEAK   DEFAULT    1 __cxa_pure_virtual
+   319: 0000045e   104 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHubC2Eh
+   320: 00001c9e     0 NOTYPE  GLOBAL DEFAULT    1 __floatsisf
+   321: 00000efc    24 FUNC    GLOBAL DEFAULT    1 _ZN20Adafruit_Si7021_Tiny
+   322: 00000000     0 NOTYPE  GLOBAL DEFAULT    1 __vectors
+   323: 00800137    18 OBJECT  GLOBAL DEFAULT    3 _ZN7USI_TWI7USI_BufE
+   324: 008000d2    87 OBJECT  GLOBAL DEFAULT    3 hub
+   325: 0080006c     0 NOTYPE  GLOBAL DEFAULT    2 __data_end
+   326: 000016d4    48 FUNC    GLOBAL DEFAULT    1 _Z19USI_TWI_Master_Stopv
+   327: 00001b60     0 NOTYPE  GLOBAL DEFAULT    1 __eqsf2
+   328: 00800149     1 OBJECT  GLOBAL DEFAULT    3 USI_TWI_state
+   329: 00000000     0 NOTYPE  WEAK   DEFAULT    1 __vector_default
+   330: 00001722   148 FUNC    GLOBAL DEFAULT    1 __vector_5
+   331: 0000157a    50 FUNC    GLOBAL DEFAULT    1 _Z23USI_TWI_Master_Transf
+   332: 00001edc     4 NOTYPE  GLOBAL HIDDEN     1 __tablejump2__
+   333: 00000ebe    62 FUNC    GLOBAL DEFAULT    1 _ZN11OneWireItemC1Ehhhhhh
+   334: 00001862    40 FUNC    GLOBAL DEFAULT    1 init
+   335: 00000042     0 NOTYPE  GLOBAL DEFAULT    1 __ctors_start
+   336: 00800136     1 OBJECT  GLOBAL DEFAULT    3 _ZN7USI_TWI10USI_BufIdxE
+   337: 000015da   244 FUNC    GLOBAL DEFAULT    1 _Z35USI_TWI_Start_Transce
+   338: 00000050    22 NOTYPE  GLOBAL HIDDEN     1 __do_copy_data
+   339: 00800133     1 OBJECT  GLOBAL DEFAULT    3 TinyWireM
+   340: 00001b60     8 FUNC    GLOBAL DEFAULT    1 __cmpsf2
+   341: 00001d7c    14 FUNC    GLOBAL DEFAULT    1 __fp_pscB
+   342: 00001dbc     0 NOTYPE  GLOBAL DEFAULT    1 __fp_splitA
+   343: 0080006c     0 NOTYPE  GLOBAL DEFAULT    3 __bss_start
+   344: 00001a8a    12 FUNC    GLOBAL DEFAULT    1 main
+   345: 00001b60     0 NOTYPE  GLOBAL DEFAULT    1 __ltsf2
+   346: 0000008e     0 NOTYPE  WEAK   DEFAULT    1 __vector_4
+   347: 00000dba   148 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub12showPres
+   348: 000017ce    72 FUNC    GLOBAL DEFAULT    1 micros
+   349: 00001548    22 FUNC    GLOBAL DEFAULT    1 _ZN7USI_TWI4readEv
+   350: 00001e06     4 FUNC    GLOBAL DEFAULT    1 __mulsf3
+   351: 00000000     0 NOTYPE  WEAK   DEFAULT  ABS __heap_end
+   352: 00800153    32 OBJECT  GLOBAL DEFAULT    3 TWI_Buffer
+   353: 0000008e     0 NOTYPE  WEAK   DEFAULT    1 __vector_9
+   354: 00001818    74 FUNC    GLOBAL DEFAULT    1 delay
+   355: 0000008e     0 NOTYPE  WEAK   DEFAULT    1 __vector_2
+   356: 00001aba   192 FUNC    GLOBAL DEFAULT    1 __addsf3x
+   357: 008000aa    20 OBJECT  GLOBAL DEFAULT    3 ds18b21
+   358: 00001dfe     8 FUNC    GLOBAL DEFAULT    1 __gesf2
+   359: 00800135     1 OBJECT  GLOBAL DEFAULT    3 _ZN7USI_TWI12USI_LastRead
+   360: 00000128   132 FUNC    GLOBAL DEFAULT    1 _Z8blinkingv
+   361: 000001e4    56 FUNC    GLOBAL DEFAULT    1 _Z6getVccv
+   362: 000004c6    18 FUNC    GLOBAL DEFAULT    1 _ZNK10OneWireHub18getNrOf
+   363: 000014be     2 FUNC    GLOBAL DEFAULT    1 _ZN7USI_TWI5beginEv
+   364: 000006a8    84 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub6attachER1
+   365: 00000036     6 OBJECT  GLOBAL DEFAULT    1 port_to_output_PGM
+   366: 00001d6e    14 FUNC    GLOBAL DEFAULT    1 __fp_pscA
+   367: 00000090   152 FUNC    GLOBAL DEFAULT    1 setup
+   368: 00000e82    10 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub15raiseSla
+   369: 00800079     9 OBJECT  GLOBAL DEFAULT    3 sensor
+   370: 00000044     0 NOTYPE  GLOBAL DEFAULT    1 __dtors_start
+   371: 00000044     0 NOTYPE  GLOBAL DEFAULT    1 __ctors_end
+   372: 0000025f     0 NOTYPE  WEAK   DEFAULT  ABS __stack
+   373: 00000030     6 OBJECT  GLOBAL DEFAULT    1 port_to_input_PGM
+   374: 0000151e    42 FUNC    GLOBAL DEFAULT    1 _ZN7USI_TWI11requestFromE
+   375: 0080006c     0 NOTYPE  GLOBAL DEFAULT    2 _edata
+   376: 00800173     0 NOTYPE  GLOBAL DEFAULT    4 _end
+   377: 000001ac    56 FUNC    GLOBAL DEFAULT    1 _Z7getTempv
+   378: 0000008e     0 NOTYPE  WEAK   DEFAULT    1 __vector_8
+   379: 00001b86     0 NOTYPE  GLOBAL DEFAULT    1 __divsf3_pse
+   380: 0000001e     6 OBJECT  GLOBAL DEFAULT    1 digital_pin_to_timer_PGM
+   381: 0080014f     4 OBJECT  GLOBAL DEFAULT    3 millis_timer_overflow_cou
+   382: 00001ef0     0 NOTYPE  WEAK   HIDDEN     1 exit
+   383: 00001c9a   122 FUNC    GLOBAL DEFAULT    1 __floatunsisf
+   384: 00000f14   122 FUNC    GLOBAL DEFAULT    1 _ZN20Adafruit_Si7021_Tiny
+   385: 00800066     6 OBJECT  WEAK   DEFAULT    2 _ZTV11OneWireItem
+   386: 00000e8c    14 FUNC    GLOBAL DEFAULT    1 _ZNK11OneWireItem6sendIDE
+   387: 00001c42    88 FUNC    GLOBAL DEFAULT    1 __fixunssfsi
+   388: 000016ce     6 FUNC    GLOBAL DEFAULT    1 _Z24USI_TWI_Start_Read_Wr
+   389: 00001ef0     0 NOTYPE  GLOBAL HIDDEN     1 _exit
+   390: 0000045e   104 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHubC1Eh
+   391: 00001354   362 FUNC    GLOBAL DEFAULT    1 __vector_14
+   392: 0000008e     0 NOTYPE  WEAK   DEFAULT    1 __vector_10
+   393: 00800060     0 NOTYPE  GLOBAL DEFAULT    2 __data_start
+   394: 000003f6   104 FUNC    GLOBAL DEFAULT    1 _ZN7DS18B2014setTemperatu
+   395: 000007d2   160 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub7sendBitEb
+   396: 000012b8    14 FUNC    GLOBAL DEFAULT    1 USI_TWI_Data_In_Receive_B
+   397: 000017b6    24 FUNC    GLOBAL DEFAULT    1 millis
+   398: 00001a98     0 NOTYPE  GLOBAL DEFAULT    1 __addsf3
+   399: 00000936   122 FUNC    GLOBAL DEFAULT    1 _ZN10OneWireHub7recvBitEv
+   400: 00000d6e    76 FUNC    GLOBAL DEFAULT    1 _ZNK10OneWireHub4waitEm
+   401: 00001df2     0 NOTYPE  GLOBAL DEFAULT    1 __fp_szero
+   402: 00000076    20 NOTYPE  GLOBAL HIDDEN     1 __do_global_ctors
+
+No version information found in this file.
+._?O 11
+/_?O/01
+.D#	
+2/7pv/
+,S/]!Y
+N-l-
+O-l-
+._?O 11
+,_?O,31
+/O_2
+E+F+G+A
+E+F+G+q
+M8R@a
+APQ	a	q		
+APQ	a	q	
+APQ	a	q	
+APQ	a	q	
+E+F+G+
+APQ	a	q	
+E+F+G+
+APQ	a	q	
+APQ	a	q	
+E+F+G+
+APQ	a	q	
+E+F+G+
+APQ	a	q	
+E+F+G+	
+O__OH0Q
+._?O 11
+	!	1	
+E+F+G+!
+APQ	a	q	i
+APQ	a	q	Y
+H+Y+j+{+H
+H+Y+j+{+H
+H+Y+j+{+H
+H+Y+j+{+L
+H+Y+j+{+L
+H+Y+j+{+L
+f'x/
+h>s@
+/#/4/D'X_
+__O"
+X_O*
+g/x/
+#+$+%+!
+'f'w'
+/q-`-
+   text	   data	    bss	    dec	    hex	filename
+   7924	     12	    263	   8199	   2007	/tmp/arduino_build_936640/Tiny_OWSlave_OWH_DS18B20_thermo-hygrometer.ino.elf

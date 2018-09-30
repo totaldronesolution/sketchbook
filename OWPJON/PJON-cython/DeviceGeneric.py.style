@@ -1,0 +1,19 @@
+/home/travis/build/drtrigon/sketchbook/OWPJON/PJON-cython/DeviceGeneric.py:18:80: E501 line too long (111 > 79 characters)
+/home/travis/build/drtrigon/sketchbook/OWPJON/PJON-cython/DeviceGeneric.py:31:80: E501 line too long (96 > 79 characters)
+/home/travis/build/drtrigon/sketchbook/OWPJON/PJON-cython/DeviceGeneric.py:42:80: E501 line too long (92 > 79 characters)
+/home/travis/build/drtrigon/sketchbook/OWPJON/PJON-cython/DeviceGeneric.py:70:80: E501 line too long (103 > 79 characters)
+/home/travis/build/drtrigon/sketchbook/OWPJON/PJON-cython/DeviceGeneric.py:72:80: E501 line too long (87 > 79 characters)
+/home/travis/build/drtrigon/sketchbook/OWPJON/PJON-cython/DeviceGeneric.py:74:80: E501 line too long (90 > 79 characters)
+/home/travis/build/drtrigon/sketchbook/OWPJON/PJON-cython/DeviceGeneric.py:101:80: E501 line too long (88 > 79 characters)
+/home/travis/build/drtrigon/sketchbook/OWPJON/PJON-cython/DeviceGeneric.py:120:80: E501 line too long (111 > 79 characters)
+/home/travis/build/drtrigon/sketchbook/OWPJON/PJON-cython/DeviceGeneric.py:129:80: E501 line too long (96 > 79 characters)
+9     E501 line too long (111 > 79 characters)
+0.81       seconds elapsed
+113        total logical lines processed
+139        logical lines processed per second
+144        total physical lines processed
+177        physical lines processed per second
+725        total tokens processed
+895        tokens processed per second
+1          total files processed
+1          files processed per second
